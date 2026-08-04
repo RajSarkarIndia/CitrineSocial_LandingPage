@@ -1,316 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Citrine Social</title>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CitrineSocial</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+html{scroll-behavior:smooth}
+body{background:#f8fafc}
+.glass{backdrop-filter:blur(18px);background:rgba(255,255,255,.8)}
+.hero{
+background:
+radial-gradient(circle at 10% 20%,rgba(16,185,129,.18),transparent 30%),
+radial-gradient(circle at 90% 0%,rgba(34,197,94,.15),transparent 25%),
+linear-gradient(#fff,#f4fff8);
+}
+.card{transition:.3s}
+.card:hover{transform:translateY(-6px)}
+</style>
 </head>
-<body class="bg-white text-emerald-950 overflow-x-hidden">
+<body class="text-slate-900">
 
-  <!-- Background Glow -->
-  <div class="absolute inset-0 overflow-hidden pointer-events-none">
-    <div class="absolute top-[-120px] left-[-80px] w-[320px] h-[320px] bg-emerald-400/20 blur-3xl rounded-full"></div>
-    <div class="absolute bottom-[-100px] right-[-100px] w-[360px] h-[360px] bg-green-400/20 blur-3xl rounded-full"></div>
-  </div>
+<nav class="fixed top-5 left-1/2 -translate-x-1/2 glass rounded-full border border-slate-200 shadow-xl w-[94%] max-w-7xl px-8 py-4 flex justify-between items-center z-50">
+<div class="font-black text-2xl">Citrine<span class="text-emerald-600">Social</span></div>
+<div class="hidden md:flex gap-8 text-sm font-medium">
+<a href="#why">Why</a>
+<a href="#features">Features</a>
+<a href="#tech">Technology</a>
+</div>
+<button onclick="openModal()" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-full font-semibold">
+Join Waitlist
+</button>
+</nav>
 
-  <!-- Navbar -->
-  <header class="relative z-10 flex items-center justify-between px-6 md:px-12 py-6 border-b border-emerald-100 bg-white/80 backdrop-blur-sm">
-    <div>
-      <h1 class="text-2xl md:text-3xl font-bold tracking-wide">
-        Citrine
-      </h1>
+<section class="hero min-h-screen flex items-center pt-24">
+<div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center">
 
-      <p class="text-xs text-emerald-900/80 tracking-[0.25em] uppercase mt-1">
-        Social • Friends • Community
-      </p>
-    </div>
+<div>
+<span class="inline-flex px-4 py-2 rounded-full bg-emerald-100 text-emerald-700 font-semibold">No Recommendation Algorithm • Interest-Based Feed</span>
 
-    <button
-      onclick="openModal()"
-      class="px-5 py-2 rounded-2xl bg-emerald-500 text-white font-medium shadow-xl shadow-emerald-500/20 hover:scale-105 transition duration-300"
-    >
-      Join Waitlist
-    </button>
-  </header>
+<h1 class="mt-8 text-6xl lg:text-8xl font-black leading-[0.92]">
+Social media<br>
+built around<br>
+<span class="text-emerald-600">your interests.</span>
+</h1>
 
-  <!-- Hero -->
-  <section class="relative z-10 flex flex-col items-center justify-center text-center px-6 py-24 md:py-36 bg-gradient-to-br from-emerald-300 via-green-200 to-emerald-100 overflow-hidden">
+<p class="mt-8 text-xl text-slate-600 leading-relaxed max-w-xl">
+<b>CitrineSocial</b> is a modern social media platform designed around your choices instead of engagement algorithms.
+Choose the topics you want to see the most—Travel, Food, Technology, Gaming, Photography, Nature, and more.
+Your feed is personalized from the interests <b>you explicitly select</b>, and you can update them anytime.
+</p>
 
-    <div class="max-w-4xl">
+<div class="mt-10 flex flex-wrap gap-3">
+<span class="px-4 py-2 rounded-full bg-white shadow">✓ No Recommendation Algorithm</span>
+<span class="px-4 py-2 rounded-full bg-white shadow">✓ Interest-Based Feed</span>
+<span class="px-4 py-2 rounded-full bg-white shadow">✓ Minimal Tracking</span>
+</div>
 
-      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/50 backdrop-blur-md text-sm text-emerald-900 mb-8">
-        <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-        A different kind of social space
-      </div>
+<div class="mt-10 flex gap-4">
+<button onclick="openModal()" class="bg-emerald-600 text-white px-8 py-4 rounded-2xl font-semibold">Join Waitlist</button>
+<a href="#why" class="border px-8 py-4 rounded-2xl font-semibold">Learn More</a>
+</div>
+</div>
 
-      <h2 class="text-5xl md:text-7xl font-black leading-tight tracking-tight">
-        Real conversations.
-        <br />
-        No performance.
-      </h2>
+<div class="space-y-5">
+<div class="bg-white rounded-3xl shadow-xl p-6">
+<h3 class="font-bold text-xl mb-4">Choose your interests</h3>
+<div class="flex flex-wrap gap-3">
+<span class="bg-emerald-100 px-4 py-2 rounded-full">Travel</span>
+<span class="bg-emerald-100 px-4 py-2 rounded-full">Food</span>
+<span class="bg-emerald-100 px-4 py-2 rounded-full">Programming</span>
+<span class="bg-emerald-100 px-4 py-2 rounded-full">Photography</span>
+<span class="bg-emerald-100 px-4 py-2 rounded-full">Nature</span>
+<span class="bg-emerald-100 px-4 py-2 rounded-full">Gaming</span>
+</div>
+</div>
 
-      <p class="mt-8 text-lg md:text-xl text-emerald-900/80 leading-relaxed max-w-2xl mx-auto">
-        Citrine Social is built for friendships, communities, and casual interaction among friends — not endless competition among peers.
-      </p>
+<div class="bg-white rounded-3xl shadow-xl p-6">
+<h3 class="font-bold text-xl mb-4">Your Feed</h3>
+<div class="space-y-3">
+<div class="bg-slate-100 rounded-2xl p-4">📷 Hiking through the Himalayas</div>
+<div class="bg-emerald-50 rounded-2xl p-4">🍜 Best homemade ramen recipe</div>
+<div class="bg-slate-100 rounded-2xl p-4">💻 Spring Boot GraphQL tutorial</div>
+</div>
+<p class="mt-5 text-sm text-slate-500">Your interests shape your feed—not an engagement algorithm.</p>
+</div>
+</div>
 
-      <div class="mt-14 flex justify-center">
-        <a href="#features" class="group flex flex-col items-center text-emerald-700 hover:text-emerald-900 transition-colors duration-300">
-          <span class="text-sm uppercase tracking-[0.25em] mb-3 text-emerald-800/60 group-hover:text-emerald-500">
-            Scroll Down
-          </span>
+</div>
+</section>
 
-          <div class="animate-bounce text-4xl">
-            ↓
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
+<section id="why" class="py-24">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="text-5xl font-black mb-4">Why CitrineSocial?</h2>
+<p class="text-slate-600 max-w-3xl text-lg">Most social media platforms continuously analyze your behaviour to maximize engagement. CitrineSocial takes a different approach.</p>
 
-  <!-- Features -->
-  <section id="features" class="relative z-10 px-6 md:px-12 py-24 bg-white">
+<div class="grid lg:grid-cols-2 gap-10 mt-16">
+<div class="rounded-3xl border p-8 bg-red-50">
+<h3 class="text-2xl font-bold mb-6">Typical Social Media</h3>
+<ul class="space-y-4 text-slate-700">
+<li>✕ Tracks clicks and watch time</li>
+<li>✕ Optimizes for engagement</li>
+<li>✕ Endless recommendation algorithm</li>
+<li>✕ Decides what you should see</li>
+</ul>
+</div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 max-w-6xl mx-auto">
+<div class="rounded-3xl border p-8 bg-emerald-50">
+<h3 class="text-2xl font-bold mb-6">CitrineSocial</h3>
+<ul class="space-y-4 text-slate-700">
+<li>✓ You choose your interests</li>
+<li>✓ Feed follows your selections</li>
+<li>✓ Change interests anytime</li>
+<li>✓ No engagement-based recommendation algorithm</li>
+</ul>
+</div>
+</div>
 
-      <div class="rounded-[2rem] border border-emerald-200 bg-white p-10 shadow-lg hover:-translate-y-2 transition duration-300 min-h-[260px]">
-        <div class="text-4xl mb-4">💬</div>
-        <h3 class="text-2xl font-semibold mb-3">Conversations</h3>
-        <p class="text-emerald-800/80 leading-relaxed">
-          Realtime spaces designed around talking, sharing, and simply being present.
-        </p>
-      </div>
+<div class="mt-20 grid md:grid-cols-3 gap-8">
+<div class="card bg-white rounded-3xl p-8 shadow">
+<h3 class="font-bold text-xl">No Recommendation Algorithm</h3>
+<p class="mt-4 text-slate-600">Content isn't ranked by what keeps you scrolling. Your chosen interests determine what appears.</p>
+</div>
 
-      <div class="rounded-[2rem] border border-emerald-200 bg-white p-10 shadow-lg hover:-translate-y-2 transition duration-300 min-h-[260px]">
-        <div class="text-4xl mb-4">🎮</div>
-        <h3 class="text-2xl font-semibold mb-3">Casual Games</h3>
-        <p class="text-emerald-800/80 leading-relaxed">
-          Relax with lightweight social games designed for hanging out, laughing, and spending time together.
-        </p>
-      </div>
+<div class="card bg-white rounded-3xl p-8 shadow">
+<h3 class="font-bold text-xl">Minimal Tracking</h3>
+<p class="mt-4 text-slate-600">Instead of building a detailed engagement profile, CitrineSocial simply remembers the interests you explicitly select to personalize your feed.</p>
+</div>
 
-      <div class="rounded-[2rem] border border-emerald-200 bg-white p-10 shadow-lg hover:-translate-y-2 transition duration-300 min-h-[260px]">
-        <div class="text-4xl mb-4">🌐</div>
-        <h3 class="text-2xl font-semibold mb-3">Discovery</h3>
-        <p class="text-emerald-800/80 leading-relaxed">
-          Find communities, meet people, and explore naturally without chasing algorithms.
-        </p>
-      </div>
+<div class="card bg-white rounded-3xl p-8 shadow">
+<h3 class="font-bold text-xl">Always in Control</h3>
+<p class="mt-4 text-slate-600">Add or remove interests whenever you like. Your feed changes because you decided—not because an opaque algorithm did.</p>
+</div>
+</div>
+</div>
+</section>
 
-      <div class="rounded-[2rem] border border-emerald-200 bg-white p-10 shadow-lg hover:-translate-y-2 transition duration-300 min-h-[260px]">
-        <div class="text-4xl mb-4">✨</div>
-        <h3 class="text-2xl font-semibold mb-3">Atmosphere</h3>
-        <p class="text-emerald-800/80 leading-relaxed">
-          A calmer social experience inspired by the old internet — expressive, casual, human, and filled with casual games and communities.
-        </p>
-      </div>
+<section id="features" class="bg-slate-50 py-24">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="text-5xl font-black mb-12">Features</h2>
+<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+<div class="card bg-white rounded-3xl p-8 shadow"><h3 class="font-bold">💬 Messaging</h3><p class="mt-3">Private chat, group chat and offline chat.</p></div>
+<div class="card bg-white rounded-3xl p-8 shadow"><h3 class="font-bold">👥 Communities</h3><p class="mt-3">Join communities around your interests.</p></div>
+<div class="card bg-white rounded-3xl p-8 shadow"><h3 class="font-bold">📝 Posts</h3><p class="mt-3">Share text, photos and videos.</p></div>
+<div class="card bg-white rounded-3xl p-8 shadow"><h3 class="font-bold">🎮 Games</h3><p class="mt-3">Play Tic-Tac-Toe with friends.</p></div>
+<div class="card bg-white rounded-3xl p-8 shadow"><h3 class="font-bold">🎁 Gifts</h3><p class="mt-3">Support creators with gifts and subscriptions.</p></div>
+<div class="card bg-white rounded-3xl p-8 shadow"><h3 class="font-bold">🔍 Search</h3><p class="mt-3">Discover posts and communities by interest.</p></div>
+</div>
+</div>
+</section>
 
-      <div class="rounded-[2rem] border border-emerald-200 bg-white p-10 shadow-lg hover:-translate-y-2 transition duration-300 min-h-[260px]">
-        <div class="text-4xl mb-4">🌍</div>
-        <h3 class="text-2xl font-semibold mb-3">Global Feed</h3>
-        <p class="text-emerald-800/80 leading-relaxed">
-          Explore posts, thoughts, and moments shared openly across the Citrine community.
-        </p>
-      </div>
+<section id="tech" class="bg-slate-900 text-white py-24">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="text-5xl font-black mb-10">Built with modern technologies</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+<div class="bg-slate-800 rounded-2xl p-5">Spring Boot 4</div>
+<div class="bg-slate-800 rounded-2xl p-5">Angular 21</div>
+<div class="bg-slate-800 rounded-2xl p-5">GraphQL</div>
+<div class="bg-slate-800 rounded-2xl p-5">WebSocket</div>
+<div class="bg-slate-800 rounded-2xl p-5">Redis</div>
+<div class="bg-slate-800 rounded-2xl p-5">Kafka</div>
+<div class="bg-slate-800 rounded-2xl p-5">PostgreSQL</div>
+<div class="bg-slate-800 rounded-2xl p-5">Spring AI</div>
+</div>
+</div>
+</section>
 
-      <div class="rounded-[2rem] border border-emerald-200 bg-white p-10 shadow-lg hover:-translate-y-2 transition duration-300 min-h-[260px]">
-        <div class="text-4xl mb-4">👥</div>
-        <h3 class="text-2xl font-semibold mb-3">Friends Feed</h3>
-        <p class="text-emerald-800/80 leading-relaxed">
-          Stay connected with close friends through a quieter, more personal social feed.
-        </p>
-      </div>
+<footer class="py-20 text-center">
+<h2 class="text-5xl font-black">Social media should work for you.</h2>
+<p class="mt-6 text-slate-600 text-lg">Choose your interests. Connect with people. Stay in control.</p>
+<button onclick="openModal()" class="mt-8 bg-emerald-600 text-white px-8 py-4 rounded-2xl font-semibold">Join Waitlist</button>
+</footer>
 
-    </div>
-  </section>
+<div id="modal" class="hidden fixed inset-0 bg-black/60 flex items-center justify-center p-4">
+<div class="bg-white rounded-3xl p-8 max-w-md w-full">
+<h2 class="text-3xl font-bold">Join Waitlist</h2>
+<p class="mt-3 text-slate-600">Replace this form with your Mailchimp form.</p>
+<input class="border rounded-xl w-full mt-5 p-4" placeholder="Email">
+<button class="w-full mt-4 bg-emerald-600 text-white rounded-xl p-4">Join Waitlist</button>
+<button onclick="closeModal()" class="mt-4 text-slate-500">Close</button>
+</div>
+</div>
 
-  <!-- Preview Section -->
-  <section class="relative z-10 px-6 md:px-12 pb-28">
-
-    <div class="max-w-6xl mx-auto rounded-[2rem] border border-emerald-200 bg-white overflow-hidden shadow-2xl">
-
-      <div class="grid grid-cols-1 lg:grid-cols-2">
-
-        <div class="p-10 md:p-14 flex flex-col justify-center">
-
-          <p class="text-emerald-500 uppercase tracking-[0.3em] text-xs mb-5">
-            Citrine Network
-          </p>
-
-          <h3 class="text-4xl md:text-5xl font-bold leading-tight">
-            Built for people,
-            <br />
-            not metrics.
-          </h3>
-
-          <p class="mt-6 text-emerald-800/80 leading-relaxed text-lg">
-            No visible popularity battles. No pressure to perform.
-            Just spaces where conversations, friendships, and casual games matter more than numbers.
-          </p>
-
-          <div class="mt-10">
-            <button
-              onclick="openModal()"
-              class="px-6 py-3 rounded-2xl bg-emerald-500 text-white font-semibold shadow-xl shadow-emerald-500/20 hover:scale-105 transition duration-300"
-            >
-              Join Waitlist
-            </button>
-          </div>
-        </div>
-
-        <div class="relative min-h-[420px] bg-emerald-50 border-t lg:border-l lg:border-t-0 border-emerald-100 flex items-center justify-center p-8">
-
-          <div class="w-full max-w-sm rounded-3xl border border-emerald-100 bg-white shadow-2xl overflow-hidden">
-
-            <div class="px-5 py-4 border-b border-emerald-200 flex items-center justify-between">
-              <div>
-                <p class="font-semibold">Global Room</p>
-                <p class="text-xs text-emerald-700/60">Online now</p>
-              </div>
-
-              <div class="w-3 h-3 rounded-full bg-green-400 animate-pulse"></div>
-            </div>
-
-            <div class="p-5 space-y-4">
-
-              <div class="rounded-2xl bg-emerald-50 p-4 border border-emerald-100">
-                <p class="text-sm text-emerald-900/80">
-                  "Anyone remember the old internet chatrooms?"
-                </p>
-              </div>
-
-              <div class="rounded-2xl bg-emerald-400/10 border border-emerald-400/20 p-4 ml-8">
-                <p class="text-sm text-emerald-900">
-                  "That’s exactly the vibe here ✨"
-                </p>
-              </div>
-
-              <div class="rounded-2xl bg-emerald-50 p-4 border border-emerald-100">
-                <p class="text-sm text-emerald-900/80">
-                  "Feels calmer than most social apps."
-                </p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Note -->
-  <div class="px-6 md:px-12 pb-10">
-    <div class="max-w-4xl mx-auto rounded-3xl border border-emerald-200 bg-emerald-50 p-6 text-center">
-      <p class="text-sm md:text-base text-emerald-800/80 leading-relaxed">
-        Note: The listed features may evolve during the application release. Expect additional experiences, communities, and social features over time.
-      </p>
-    </div>
-  </div>
-
-  <!-- Popup -->
-  <div
-    id="popup"
-    class="hidden fixed inset-0 bg-black/60 z-50 flex items-center justify-center px-4"
-  >
-
-    <div class="relative w-full max-w-md rounded-[2rem] bg-[#1F2937] p-8 text-white shadow-2xl">
-
-      <!-- Close -->
-      <button
-        onclick="closeModal()"
-        class="absolute top-4 right-5 text-3xl text-white/70 hover:text-white"
-      >
-        ×
-      </button>
-
-      <div class="flex items-center gap-3 mb-8">
-
-
-        <div>
-          <h3 class="text-xl font-semibold">
-            Citrine Social
-          </h3>
-
-          <p class="text-xs tracking-[0.25em] uppercase text-white/50">
-            Friends • Community
-          </p>
-        </div>
-
-      </div>
-
-      <h2 class="text-4xl font-bold leading-tight">
-        Join the Waitlist
-      </h2>
-
-      <p class="mt-5 text-white/80 leading-relaxed">
-        Be the first to know when Citrine Social launches.
-        Get updates, early access, and feature announcements.
-      </p>
-
-      <form
-        action="https://app.us13.list-manage.com/subscribe/post?u=1640e0630fe5feb1b0f85f5e1&id=a63f8720b2&f_id=004745e1f0"
-        method="POST"
-        target="_blank"
-        class="mt-8"
-      >
-
-        <input
-          type="email"
-          name="EMAIL"
-          placeholder="Enter your email"
-          required
-          class="w-full rounded-xl px-4 py-4 text-black outline-none"
-        >
-
-        <button
-          type="submit"
-          class="w-full mt-4 rounded-xl bg-amber-500 py-4 font-semibold text-white hover:bg-amber-400 transition"
-        >
-          Join Waitlist
-        </button>
-
-      </form>
-
-      <p class="mt-4 text-sm text-white/50 text-center">
-        No spam. Unsubscribe anytime.
-      </p>
-
-    </div>
-
-  </div>
-
-  <!-- Footer -->
-  <footer class="border-t border-emerald-200 py-8 px-6 md:px-12 text-center text-emerald-700 text-sm bg-white">
-    © 2026 Citrine Social — A new social atmosphere.
-  </footer>
-
-  <!-- Script -->
-  <script>
-
-    function openModal() {
-      document.getElementById("popup").classList.remove("hidden");
-    }
-
-    function closeModal() {
-      document.getElementById("popup").classList.add("hidden");
-    }
-
-    window.onclick = function (event) {
-      const popup = document.getElementById("popup");
-
-      if (event.target === popup) {
-        closeModal();
-      }
-    };
-
-  </script>
+<script>
+function openModal(){modal.classList.remove('hidden')}
+function closeModal(){modal.classList.add('hidden')}
+window.onclick=e=>{if(e.target.id==='modal')closeModal()}
+</script>
 
 </body>
 </html>
