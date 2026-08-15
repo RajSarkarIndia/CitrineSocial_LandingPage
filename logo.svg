@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 200" width="100%" height="100%">
+<defs>
+  <linearGradient
+      id="bluewhite"
+      gradientUnits="userSpaceOnUse"
+      x1="20"
+      y1="50"
+      x2="180"
+      y2="150">
+
+
+    
+ 
+    <stop offset="0%" stop-color="#D97706"/>
+    <stop offset="35%" stop-color="#FFD54A"/>
+    <stop offset="70%" stop-color="#F0A000"/>
+    <stop offset="100%" stop-color="#D97706"/>
+
+  </linearGradient>
+
+    <!-- Text -->
+  <linearGradient id="textGradient"
+      gradientUnits="userSpaceOnUse"
+      x1="210" y1="60"
+      x2="540" y2="60">
+
+    <stop offset="0%" stop-color="#FFF4C2"/>
+    <stop offset="20%" stop-color="#FFD54A"/>
+    <stop offset="50%" stop-color="#F0A000"/>
+    <stop offset="80%" stop-color="#FFD54A"/>
+    <stop offset="100%" stop-color="#FFF4C2"/>
+
+  </linearGradient>
+</defs>
+
+  <style>
+    .gem-line{
+      fill:none;
+      stroke:url(#bluewhite);
+      stroke-width:1;
+      stroke-linejoin:round;
+      stroke-linecap:round;
+      vector-effect:non-scaling-stroke;
+    }
+
+    .text-style {
+      fill: #D4AF37;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 40px;
+      font-weight: 300;
+      letter-spacing: 8px;
+    }
+   
+  </style>
+
+
+  
+  <g class="gem-line">
+    <line x1="60" y1="50" x2="140" y2="50"/>
+
+    <line x1="60" y1="50" x2="20" y2="80"/>
+    <line x1="140" y1="50" x2="180" y2="80"/>
+    <line x1="20" y1="85" x2="100" y2="150"/>
+    <line x1="180" y1="85" x2="100" y2="150"/>
+<!--middle line-->
+    <line x1="20" y1="80" x2="180" y2="80"/>
+    <line x1="20" y1="85" x2="180" y2="85"/>
+    <line x1="21" y1="80" x2="21" y2="85"/>
+    <line x1="179" y1="80" x2="179" y2="85"/>
+    
+    <line x1="60" y1="50" x2="46" y2="80"/>
+    <line x1="60" y1="50" x2="73" y2="80"/>
+    <line x1="80" y1="50" x2="73" y2="80"/>
+    <line x1="80" y1="50" x2="100" y2="80"/>
+    <line x1="100" y1="50" x2="73" y2="80"/>
+    <line x1="100" y1="50" x2="100" y2="80"/>
+    <line x1="100" y1="50" x2="127" y2="80"/>
+    <line x1="120" y1="50" x2="100" y2="80"/>
+    <line x1="120" y1="50" x2="127" y2="80"/>
+    <line x1="140" y1="50" x2="127" y2="80"/>
+    <line x1="140" y1="50" x2="154" y2="80"/>
+
+    <line x1="46" y1="80" x2="46" y2="85"/>
+    <line x1="73" y1="80" x2="73" y2="85"/>
+    <line x1="100" y1="80" x2="100" y2="85"/>
+    <line x1="127" y1="80" x2="127" y2="85"/>
+    <line x1="154" y1="80" x2="154" y2="85"/>
+
+    <line x1="46" y1="85" x2="100" y2="150"/>
+    <line x1="73" y1="85" x2="100" y2="150"/>
+    <line x1="100" y1="85" x2="100" y2="150"/>
+    <line x1="127" y1="85" x2="100" y2="150"/>
+    <line x1="154" y1="85" x2="100" y2="150"/>
+  </g>
+  <!-- Text -->
+  <text x="210" y="100" class="text-style">CitrineSocial</text>
+    <text x="430" y="150" class="text-style">.app</text>
+</svg>
+
