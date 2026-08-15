@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>CitrineSocial</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<style>
-html{scroll-behavior:smooth}
-body{background:#f8fafc}
-.glass{backdrop-filter:blur(18px);background:rgba(255,255,255,.8)}
-.hero{
-background:
-radial-gradient(circle at 10% 20%,rgba(16,185,129,.18),transparent 30%),
-radial-gradient(circle at 90% 0%,rgba(34,197,94,.15),transparent 25%),
-linear-gradient(#fff,#f4fff8);
-}
-.card{transition:.3s}
-.card:hover{transform:translateY(-6px)}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>CitrineSocial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html{scroll-behavior:smooth}
+        body{background:#f8fafc}
+        .glass{backdrop-filter:blur(18px);background:rgba(255,255,255,.8)}
+        .hero{
+            background:
+                    radial-gradient(circle at 10% 20%,rgba(16,185,129,.18),transparent 30%),
+                    radial-gradient(circle at 90% 0%,rgba(34,197,94,.15),transparent 25%),
+                    linear-gradient(#fff,#f4fff8);
+        }
+        .card{transition:.3s}
+        .card:hover{transform:translateY(-6px)}
+    </style>
 </head>
 <body class="text-slate-900">
 
 <nav class="fixed top-5 left-1/2 -translate-x-1/2 glass rounded-full border border-slate-200 shadow-xl w-[94%] max-w-7xl px-8 py-4 flex justify-between items-center z-50">
     <div class="font-black text-2xl">Citrine<span class="text-emerald-600">Social</span></div>
-    
+
     <div class="hidden md:flex gap-8 text-sm font-medium absolute left-1/2 -translate-x-1/2">
         <a href="#why" class="hover:text-emerald-600 transition">Why</a>
         <a href="#features" class="hover:text-emerald-600 transition">Features</a>
+        <a href="#developer" class="hover:text-emerald-600 transition">Developer</a>
         <a href="#tech" class="hover:text-emerald-600 transition">Technology</a>
     </div>
-    
+
     <div class="flex items-center gap-4 md:gap-6">
-        <a href="https://www.linkedin.com/company/citrinesocialapp" 
-           target="_blank" 
-           rel="noopener noreferrer" 
+        <a href="https://www.linkedin.com/company/citrinesocialapp"
+           target="_blank"
+           rel="noopener noreferrer"
            class="text-slate-400 hover:text-[#0A66C2] transition flex items-center gap-2 font-semibold text-sm">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1s2.5 1.12 2.5 2.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.1c.7-1.3 2.4-2.7 5-2.7 5.3 0 6.3 3.5 6.3 8V24h-5v-7.1c0-1.7 0-3.9-2.4-3.9s-2.8 1.9-2.8 3.8V24h-5V8z"/>
@@ -47,136 +48,174 @@ linear-gradient(#fff,#f4fff8);
 </nav>
 
 <section class="hero min-h-screen flex items-center pt-24">
-<div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center">
 
-<div>
-<span class="inline-flex px-4 py-2 rounded-full bg-emerald-100 text-emerald-700 font-semibold text-sm">No Recommendation Algorithm • Interest-Based Feed</span>
+        <div>
 
-<h1 class="mt-8 text-6xl lg:text-8xl font-black leading-[0.92]">
-Social media<br>
-built around<br>
-<span class="text-emerald-600">your interests.</span>
-</h1>
+            <h1 class="mt-8 text-6xl lg:text-8xl font-black leading-[0.92]">
+                Social media<br>
+                built around<br>
+                <span class="text-emerald-600">your interests.</span>
+            </h1>
 
-<p class="mt-8 text-xl text-slate-600 leading-relaxed max-w-xl">
-<b>CitrineSocial</b> is a modern social media platform designed around your choices instead of engagement algorithms.
-Choose the topics you want to see the most—Travel, Food, Technology, Gaming, Photography, Nature, and more.
-Your feed is personalized from the interests <b>you explicitly select</b>, and you can update them anytime.
-</p>
+            <p class="mt-8 text-xl text-slate-600 leading-relaxed max-w-xl">
+                <b>CitrineSocial</b> is a modern social media platform designed around your choices instead of engagement algorithms.
+                Choose the topics you want to see the most—Travel, Food, Technology, Gaming, Photography, Nature, and more.
+                Your feed is personalized from the interests <b>you explicitly select</b>, and you can update them anytime.
+            </p>
 
-<div class="mt-10 flex flex-wrap gap-3">
-<span class="px-4 py-2 rounded-full bg-white shadow text-sm">✓ No Recommendation Algorithm</span>
-<span class="px-4 py-2 rounded-full bg-white shadow text-sm">✓ Interest-Based Feed</span>
-<span class="px-4 py-2 rounded-full bg-white shadow text-sm">✓ Minimal Tracking</span>
-</div>
+            <div class="mt-10 flex flex-wrap gap-3">
+                <span class="px-4 py-2 rounded-full bg-white shadow text-sm">✓ No Recommendation Algorithm</span>
+                <span class="px-4 py-2 rounded-full bg-white shadow text-sm">✓ Interest-Based Feed</span>
+                <span class="px-4 py-2 rounded-full bg-white shadow text-sm">✓ Minimal Tracking</span>
+            </div>
 
-<div class="mt-10 flex gap-4">
-<button onclick="openModal()" class="bg-emerald-600 text-white px-8 py-4 rounded-2xl font-semibold hover:bg-emerald-700 transition">Join Waitlist</button>
-<a href="#why" class="border border-slate-300 hover:border-slate-400 px-8 py-4 rounded-2xl font-semibold transition">Learn More</a>
-</div>
-</div>
+            <div class="mt-10 flex gap-4">
+                <button onclick="openModal()" class="bg-emerald-600 text-white px-8 py-4 rounded-2xl font-semibold hover:bg-emerald-700 transition">Join Waitlist</button>
+                <a href="#why" class="border border-slate-300 hover:border-slate-400 px-8 py-4 rounded-2xl font-semibold transition">Learn More</a>
+            </div>
+        </div>
 
-<div class="space-y-5">
-<div class="bg-white rounded-3xl shadow-xl p-6">
-<h3 class="font-bold text-xl mb-4">Interests Chosen by You</h3>
-<div class="flex flex-wrap gap-3">
-<span class="bg-emerald-100 text-emerald-800 font-medium px-4 py-2 rounded-full">Travel</span>
-<span class="bg-emerald-100 text-emerald-800 font-medium px-4 py-2 rounded-full">Food</span>
-<span class="bg-emerald-100 text-emerald-800 font-medium px-4 py-2 rounded-full">Programming</span>
-<span class="bg-emerald-100 text-emerald-800 font-medium px-4 py-2 rounded-full">Photography</span>
-<span class="bg-emerald-100 text-emerald-800 font-medium px-4 py-2 rounded-full">Nature</span>
-<span class="bg-emerald-100 text-emerald-800 font-medium px-4 py-2 rounded-full">Gaming</span>
-</div>
-</div>
+        <div class="space-y-5">
+            <div class="bg-white rounded-3xl shadow-xl p-6">
+                <h3 class="font-bold text-xl mb-4">Interests Chosen by You</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-emerald-100 text-emerald-800 font-medium px-4 py-2 rounded-full">Travel</span>
+                    <span class="bg-emerald-100 text-emerald-800 font-medium px-4 py-2 rounded-full">Food</span>
+                    <span class="bg-emerald-100 text-emerald-800 font-medium px-4 py-2 rounded-full">Programming</span>
+                    <span class="bg-emerald-100 text-emerald-800 font-medium px-4 py-2 rounded-full">Photography</span>
+                    <span class="bg-emerald-100 text-emerald-800 font-medium px-4 py-2 rounded-full">Nature</span>
+                    <span class="bg-emerald-100 text-emerald-800 font-medium px-4 py-2 rounded-full">Gaming</span>
+                </div>
+            </div>
 
-<div class="bg-white rounded-3xl shadow-xl p-6">
-<h3 class="font-bold text-xl mb-4">Your Feed</h3>
-<div class="space-y-3">
-<div class="bg-slate-100 rounded-2xl p-4">📷 Hiking through the Himalayas</div>
-<div class="bg-emerald-50 rounded-2xl p-4">🍜 Best homemade ramen recipe</div>
-<div class="bg-slate-100 rounded-2xl p-4">💻 Spring Boot GraphQL tutorial</div>
-</div>
-<p class="mt-5 text-sm text-slate-500">Your interests shape your feed—not an engagement algorithm.</p>
-</div>
-</div>
+            <div class="bg-white rounded-3xl shadow-xl p-6">
+                <h3 class="font-bold text-xl mb-4">Your Feed</h3>
+                <div class="space-y-3">
+                    <div class="bg-slate-100 rounded-2xl p-4">📷 Hiking through the Himalayas</div>
+                    <div class="bg-emerald-50 rounded-2xl p-4">🍜 Best homemade ramen recipe</div>
+                    <div class="bg-slate-100 rounded-2xl p-4">💻 Spring Boot GraphQL tutorial</div>
+                </div>
+                <p class="mt-5 text-sm text-slate-500">Your interests shape your feed—not an engagement algorithm.</p>
+            </div>
+        </div>
 
-</div>
+    </div>
 </section>
 
 <section id="why" class="py-24">
-<div class="max-w-7xl mx-auto px-8">
-<h2 class="text-5xl font-black mb-4">Why CitrineSocial?</h2>
-<p class="text-slate-600 max-w-3xl text-lg">Most social media platforms continuously analyze your behaviour to maximize engagement. CitrineSocial takes a different approach.</p>
+    <div class="max-w-7xl mx-auto px-8">
+        <h2 class="text-5xl font-black mb-4">Why CitrineSocial?</h2>
+        <p class="text-slate-600 max-w-3xl text-lg">Most social media platforms continuously analyze your behaviour to maximize engagement. CitrineSocial takes a different approach.</p>
 
-<div class="grid lg:grid-cols-2 gap-10 mt-16">
-<div class="rounded-3xl border p-8 bg-red-50">
-<h3 class="text-2xl font-bold mb-6">Typical Social Media</h3>
-<ul class="space-y-4 text-slate-700">
-<li>✕ Tracks clicks and watch time</li>
-<li>✕ Optimizes for engagement</li>
-<li>✕ Endless recommendation algorithm</li>
-<li>✕ Decides what you should see</li>
-</ul>
-</div>
+        <div class="grid lg:grid-cols-2 gap-10 mt-16">
+            <div class="rounded-3xl border p-8 bg-red-50">
+                <h3 class="text-2xl font-bold mb-6">Typical Social Media</h3>
+                <ul class="space-y-4 text-slate-700">
+                    <li>✕ Tracks clicks and watch time</li>
+                    <li>✕ Optimizes for engagement</li>
+                    <li>✕ Endless recommendation algorithm</li>
+                    <li>✕ Decides what you should see</li>
+                </ul>
+            </div>
 
-<div class="rounded-3xl border p-8 bg-emerald-50">
-<h3 class="text-2xl font-bold mb-6">CitrineSocial</h3>
-<ul class="space-y-4 text-slate-700">
-<li>✓ Interests Chosen by You</li>
-<li>✓ Feed follows your selections</li>
-<li>✓ Change interests anytime</li>
-<li>✓ No engagement-based recommendation algorithm</li>
-</ul>
-</div>
-</div>
+            <div class="rounded-3xl border p-8 bg-emerald-50">
+                <h3 class="text-2xl font-bold mb-6">CitrineSocial</h3>
+                <ul class="space-y-4 text-slate-700">
+                    <li>✓ Interests Chosen by You</li>
+                    <li>✓ Feed follows your selections</li>
+                    <li>✓ Change interests anytime</li>
+                    <li>✓ No engagement-based recommendation algorithm</li>
+                </ul>
+            </div>
+        </div>
 
-<div class="mt-20 grid md:grid-cols-3 gap-8">
-<div class="card bg-white rounded-3xl p-8 shadow">
-<h3 class="font-bold text-xl">No Recommendation Algorithm</h3>
-<p class="mt-4 text-slate-600">Content isn't ranked by what keeps you scrolling. Your chosen interests determine what appears.</p>
-</div>
+        <div class="mt-20 grid md:grid-cols-3 gap-8">
+            <div class="card bg-white rounded-3xl p-8 shadow">
+                <h3 class="font-bold text-xl">No Recommendation Algorithm</h3>
+                <p class="mt-4 text-slate-600">Content isn't ranked by what keeps you scrolling. Your chosen interests determine what appears.</p>
+            </div>
 
-<div class="card bg-white rounded-3xl p-8 shadow">
-<h3 class="font-bold text-xl">Minimal Tracking</h3>
-<p class="mt-4 text-slate-600">Instead of building a detailed engagement profile, CitrineSocial simply remembers the interests you explicitly select to personalize your feed.</p>
-</div>
+            <div class="card bg-white rounded-3xl p-8 shadow">
+                <h3 class="font-bold text-xl">Minimal Tracking</h3>
+                <p class="mt-4 text-slate-600">Instead of building a detailed engagement profile, CitrineSocial simply remembers the interests you explicitly select to personalize your feed.</p>
+            </div>
 
-<div class="card bg-white rounded-3xl p-8 shadow">
-<h3 class="font-bold text-xl">Always in Control</h3>
-<p class="mt-4 text-slate-600">Add or remove interests whenever you like. Your feed changes because you decided—not because an opaque algorithm did.</p>
-</div>
-</div>
-</div>
+            <div class="card bg-white rounded-3xl p-8 shadow">
+                <h3 class="font-bold text-xl">Always in Control</h3>
+                <p class="mt-4 text-slate-600">Add or remove interests whenever you like. Your feed changes because you decided—not because an opaque algorithm did.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section id="features" class="bg-slate-50 py-24">
-<div class="max-w-7xl mx-auto px-8">
-<h2 class="text-5xl font-black mb-12">Features</h2>
-<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
-<div class="card bg-white rounded-3xl p-8 shadow"><h3 class="font-bold">💬 Messaging</h3><p class="mt-3">Private chat, group chat and offline chat.</p></div>
-<div class="card bg-white rounded-3xl p-8 shadow"><h3 class="font-bold">👥 Communities</h3><p class="mt-3">Join communities around your interests.</p></div>
-<div class="card bg-white rounded-3xl p-8 shadow"><h3 class="font-bold">📝 Posts</h3><p class="mt-3">Share text, photos and videos.</p></div>
-<div class="card bg-white rounded-3xl p-8 shadow"><h3 class="font-bold">🎮 Games</h3><p class="mt-3">Play Tic-Tac-Toe with friends.</p></div>
-<div class="card bg-white rounded-3xl p-8 shadow"><h3 class="font-bold">🎁 Gifts</h3><p class="mt-3">Support creators with gifts and subscriptions.</p></div>
-<div class="card bg-white rounded-3xl p-8 shadow"><h3 class="font-bold">🔍 Search</h3><p class="mt-3">Discover posts and communities by interest.</p></div>
-</div>
-</div>
+    <div class="max-w-7xl mx-auto px-8">
+        <h2 class="text-5xl font-black mb-12">Features</h2>
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+            <div class="card bg-white rounded-3xl p-8 shadow"><h3 class="font-bold">💬 Messaging</h3><p class="mt-3">Private chat, group chat and offline chat.</p></div>
+            <div class="card bg-white rounded-3xl p-8 shadow"><h3 class="font-bold">👥 Communities</h3><p class="mt-3">Join communities around your interests.</p></div>
+            <div class="card bg-white rounded-3xl p-8 shadow"><h3 class="font-bold">📝 Posts</h3><p class="mt-3">Share text, photos and videos.</p></div>
+            <div class="card bg-white rounded-3xl p-8 shadow"><h3 class="font-bold">🎮 Games</h3><p class="mt-3">Play Tic-Tac-Toe with friends.</p></div>
+            <div class="card bg-white rounded-3xl p-8 shadow"><h3 class="font-bold">🎁 Gifts</h3><p class="mt-3">Support creators with gifts and subscriptions.</p></div>
+            <div class="card bg-white rounded-3xl p-8 shadow"><h3 class="font-bold">🔍 Search</h3><p class="mt-3">Discover posts and communities by interest.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- About Developer / CitrineSocial Section (Vertically Stacked) -->
+<section id="developer" class="py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-8 flex flex-col items-center">
+
+        <!-- 1. Photo First -->
+        <div class="relative w-full max-w-sm mb-16">
+            <div class="absolute inset-0 bg-emerald-600 rounded-[2.5rem] transform translate-x-4 translate-y-4 opacity-20"></div>
+            <img src="Raj_noBG.png" alt="Raj Sarkar" class="relative z-10 w-full rounded-[2.5rem] shadow-xl bg-slate-100 object-cover border-4 border-white">
+        </div>
+
+        <!-- 2. Text Second -->
+        <div class="space-y-6 text-slate-600 text-lg w-full">
+            <h2 class="text-5xl font-black text-slate-900 mb-8 text-center">About CitrineSocial & the Developer</h2>
+            <p>
+                Hello, I am <strong>Raj Sarkar</strong>, and I have been developing this social media platform. Why am I building CitrineSocial? If you look at the social media apps near to us like Facebook, Instagram, or Twitter, they are great at providing curated feeds and they are free to use.
+            </p>
+            <p>
+                So, what's the loss here? It's <strong>doom scrolling</strong>. It's endless until time exist (and unless we are Loki fixing the time threads xD, if we lose a minute, it will never come back). Moreover, these platforms are free, but they cost you user tracking—monitoring how much time you watch a video, tracking your clicks, location data, and browsing history. Their business models rely heavily on advertising, personalization, and extensive data collection.
+            </p>
+            <p>
+                That's why I developed <strong>CitrineSocial</strong>, where everything is in your control:
+            </p>
+            <ul class="space-y-4 mt-6 mb-8 bg-slate-50 p-8 rounded-3xl border border-slate-100">
+                <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold text-xl leading-none mt-1">✓</span> <span><strong>No Doom Scrolling:</strong> Set the exact number of posts you want to watch in a go (10, 20, or 100—no limit). This creates a natural endpoint so you realize how many posts you've consumed and can get back to being productive.</span></li>
+                <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold text-xl leading-none mt-1">✓</span> <span><strong>Feeds:</strong> Feeds are divided into multiple parts: <em>Friends Feed, Follower Feed, Interest Feed, Trending Feed</em> (showing the top 100 posts), and Discovery Feed. The Interest Feed is filled <em>only</em> by the topics you select.</span></li>
+                <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold text-xl leading-none mt-1">✓</span> <span><strong>Real-Time Discovery:</strong> Want to find new friends, follow new people, or develop a new interest? Visit the Discovery Feed to see real-time posts by users with zero algorithm manipulation.</span></li>
+                <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold text-xl leading-none mt-1">✓</span> <span><strong>Minimal Tracking:</strong> We do not track what captures your interest via watch time or clicks. More importantly, we don't store personal data like your IP address or country of origin. (Authentication is managed securely by Auth0).</span></li>
+                <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold text-xl leading-none mt-1">✓</span> <span><strong>Digital Gifts & Monetization:</strong> People can give you predefined digital gifts, which gives you points which you can redeem for gift cards after a cool down period.</span></li>
+                <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold text-xl leading-none mt-1">✓</span> <span><strong>Rich Media:</strong> Upload images, videos, and even <strong>3D models</strong> a feature other social media platforms aren't currently providing.</span></li>
+                <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold text-xl leading-none mt-1">✓</span> <span><strong>AI Moderation:</strong> New posts are actively moderated by AI, and we provide robust reporting options to remove any inappropriate content that slips through.</span></li>
+            </ul>
+            <p>
+                We even have games too (currently Tic-Tac-Toe, might add more later!). NO feed algorithm and minimal tracking—everything is in your control.
+            </p>
+        </div>
+
+    </div>
 </section>
 
 <section id="tech" class="bg-slate-900 text-white py-24">
-<div class="max-w-7xl mx-auto px-8">
-<h2 class="text-5xl font-black mb-10">Built with modern technologies</h2>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-5">
-<div class="bg-slate-800 rounded-2xl p-5">Spring Boot 4</div>
-<div class="bg-slate-800 rounded-2xl p-5">Angular 21</div>
-<div class="bg-slate-800 rounded-2xl p-5">GraphQL</div>
-<div class="bg-slate-800 rounded-2xl p-5">WebSocket</div>
-<div class="bg-slate-800 rounded-2xl p-5">Redis</div>
-<div class="bg-slate-800 rounded-2xl p-5">Kafka</div>
-<div class="bg-slate-800 rounded-2xl p-5">PostgreSQL</div>
-<div class="bg-slate-800 rounded-2xl p-5">Spring AI</div>
-</div>
-</div>
+    <div class="max-w-7xl mx-auto px-8">
+        <h2 class="text-5xl font-black mb-10">Built with modern technologies</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+            <div class="bg-slate-800 rounded-2xl p-5">Spring Boot 4</div>
+            <div class="bg-slate-800 rounded-2xl p-5">Angular 21</div>
+            <div class="bg-slate-800 rounded-2xl p-5">GraphQL</div>
+            <div class="bg-slate-800 rounded-2xl p-5">WebSocket</div>
+            <div class="bg-slate-800 rounded-2xl p-5">Redis</div>
+            <div class="bg-slate-800 rounded-2xl p-5">Kafka</div>
+            <div class="bg-slate-800 rounded-2xl p-5">PostgreSQL</div>
+            <div class="bg-slate-800 rounded-2xl p-5">Spring AI</div>
+        </div>
+    </div>
 </section>
 
 <footer class="py-20 text-center">
@@ -201,23 +240,26 @@ Your feed is personalized from the interests <b>you explicitly select</b>, and y
 </footer>
 
 <div id="modal" class="hidden fixed inset-0 z-[100] bg-black/60 flex items-center justify-center p-4">
-<div class="bg-white rounded-3xl p-8 max-w-md w-full relative">
-<h2 class="text-3xl font-bold">Join Waitlist</h2>
-<p class="mt-3 text-slate-600">Be the first to know when CitrineSocial launches. Get updates, early access, and feature announcements.</p>
-<!-- Mailchimp Form Integrated Here -->
-<form action="https://app.us13.list-manage.com/subscribe/post?u=1640e0630fe5feb1b0f85f5e1&id=a63f8720b2&f_id=004745e1f0" method="POST" target="_blank">
-<input type="email" name="EMAIL" required class="border rounded-xl w-full mt-5 p-4 outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500" placeholder="Enter your email">
-<button type="submit" class="w-full mt-4 bg-emerald-600 hover:bg-emerald-700 transition font-semibold text-white rounded-xl p-4">Join Waitlist</button>
-</form>
-<button onclick="closeModal()" class="w-full mt-4 text-slate-500 hover:text-slate-800 transition">Close</button>
-</div>
+    <div class="bg-white rounded-3xl p-8 max-w-md w-full relative">
+        <h2 class="text-3xl font-bold">Join Waitlist</h2>
+        <p class="mt-3 text-slate-600">Be the first to know when CitrineSocial launches. Get updates, early access, and feature announcements.</p>
+        <!-- Mailchimp Form Integrated Here -->
+        <form action="https://app.us13.list-manage.com/subscribe/post?u=1640e0630fe5feb1b0f85f5e1&id=a63f8720b2&f_id=004745e1f0" method="POST" target="_blank">
+            <input type="email" name="EMAIL" required class="border rounded-xl w-full mt-5 p-4 outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500" placeholder="Enter your email">
+            <button type="submit" class="w-full mt-4 bg-emerald-600 hover:bg-emerald-700 transition font-semibold text-white rounded-xl p-4">Join Waitlist</button>
+        </form>
+        <button onclick="closeModal()" class="w-full mt-4 text-slate-500 hover:text-slate-800 transition">Close</button>
+    </div>
 </div>
 
 <script>
-function openModal(){modal.classList.remove('hidden')}
-function closeModal(){modal.classList.add('hidden')}
-window.onclick=e=>{if(e.target.id==='modal')closeModal()}
+    function openModal(){modal.classList.remove('hidden')}
+    function closeModal(){modal.classList.add('hidden')}
+    window.onclick=e=>{if(e.target.id==='modal')closeModal()}
 </script>
+<h3 style="text-align:center;margin-bottom:30px;">We are still developing, features might change if required. But we will never compromise with privacy.</h3>
+
+
 
 </body>
 </html>
